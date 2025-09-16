@@ -40,6 +40,13 @@ export async function GET() {
                     select: {
                         name: true
                     }
+                },
+                User: {
+                    select: {
+                        name: true,
+                        email: true,
+                        phone: true
+                    }
                 }
              }
         });
